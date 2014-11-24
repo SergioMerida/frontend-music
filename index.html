@@ -1,4 +1,99 @@
-<!--
-Usa este archivo para tu proyecto. No olvides hacer
-la estructura correta y guardar TODO tu CSS en el archivo styles.css
- -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="shortcut icon" type="image/png" href="img/photo.jpg.png"/>
+
+	<title>Top Chart by Sergio</title>
+
+<!-- Jquery -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+<!-- Bootstrap core CSS -->
+<link href="css/bootstrap.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/sty.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+    <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+     
+</head>
+
+<body>
+
+	<div class="container-fluid">
+		<div class="jumbotron">
+		    <center><h1>Top chart of the week</h1></center>
+ 		</div><!-- jumbotron -->
+	</div><!-- Container -->
+
+	<div class="container">
+	<div class="row">
+	<div class="col-md-3">
+		<ul class="nav nav-list">
+    		<li class="nav-header">Choose an option</li>
+    		<li><a href="#" class="ordered">Ordered alphabetically (A-Z)</a></li>
+    		<li><a href="#" class="back">Ordered alphabetically (Z-A)</a></li>
+    		<li><a href="#" class="playcounts">Ordered by playcounts</a></li>
+    		<li><a href="#" class="duration">Ordered by duration</a></li>
+		<li><a href="#" class="del">Show the first of the list</a></li>
+		</ul>
+
+	</div><!-- Col -->
+	<div class="col-md-9">
+		<div class="panel panel-default">
+ 		<!-- Default panel contents -->
+  		<div class="panel-heading">Top chart</div>
+		<div class="table-responsive">
+		<table class="table table-striped">
+    			<thead>
+    				<tr>
+					<th>#</th>
+    					<th>Song</th>
+    					<th>Artist</th>
+					<th>Playcounts</th>
+				    	<th>Duration</th>
+				</tr>
+    			</thead>
+    			<tbody class="mostrar">
+    			</tbody>
+    		</table>
+		</div>
+	</div><!-- 2do col -->
+	</div><!-- In a row -->
+	</div><!--Container-->
+	
+	<br>
+	<br>
+	<br>
+	<br>
+	<div class="navbar navbar-inverse navbar-fixed-bottom">
+	
+	<div class="container">
+		<p class="navbar-text pull-left">Site Built By: Sergio Merida</p>
+		<a href="https://github.com/SergioMerida" target="blank" class="navbar-btn btn-info btn pull-right">Look my Github</a>
+	</div>	
+
+	</div>
+
+	
+	<!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	<!-- ScriptJS -->
+	<script src="js/script.js"></script>
+
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
