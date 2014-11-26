@@ -79,7 +79,7 @@ $(document).ready(function() {
 
     for (var i = 0; i <50; i++) {
         var play = "http://img268.imageshack.us/img268/4378/buttonplayc.png"
-        $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + artist[i] + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
+        $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + "<a href=\""+urls[i]+"\">" + artist[i] + "</a>" + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
     };
   });
 
@@ -90,7 +90,7 @@ $(document).ready(function() {
     for (var x = 0; x <50; x++) {
       for (var i = 0; i <50; i++) {
         if (OrderList[x] === song[i]) {
-          $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + artist[i] + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
+          $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + "<a href=\""+urls[i]+"\">" + artist[i] + "</a>" + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
         };
       };
     };
@@ -104,7 +104,7 @@ $(document).ready(function() {
       for (var i = 0; i <50; i++) {
         if (OrderList[x] === song[i]) {
           var play = "http://img268.imageshack.us/img268/4378/buttonplayc.png"
-          $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + artist[i] + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
+          $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + "<a href=\""+urls[i]+"\">" + artist[i] + "</a>" + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
         };
       };
     };
@@ -116,7 +116,7 @@ $(document).ready(function() {
     for (var x = 0; x <50; x++) {
       for (var i = 0; i <50; i++) {
         if (OrderDuration[x] === duration[i]) {
-          $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + artist[i] + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
+          $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + "<a href=\""+urls[i]+"\">" + artist[i] + "</a>" + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
         };
       };
     };
@@ -128,7 +128,7 @@ $(document).ready(function() {
     for (var x = 0; x <50; x++) {
       for (var i = 0; i <50; i++) {
         if (OrderPlayCount[x] === playcounts[i]) {
-          $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + artist[i] + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
+          $(".mostrar").append("<tr>" + "<td>" + (i+1) + "</td>" + "<td class='name'>" + song[i] + "</td>" + "<td>" + "<img src=\""+image[i]+"\" class = 'image' height='50px'>" + "</td>" + "<td>" + "<a href=\""+urls[i]+"\">" + artist[i] + "</a>" + "</td>" + "<td>" + playcounts[i] + "</td>" + "<td>" + (duration[i]/60).toFixed(2) + "</td>" + "</tr>");
         };
       };
     };
